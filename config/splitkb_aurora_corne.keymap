@@ -75,19 +75,19 @@
         <
 //      --------------------------------------------------------------------------------------------------------
 //
-        &none &none &none &none &none &none        &none &none &none &none &none &none
+        &none &none &none &none &none &none        &kp LPAR &kp RPAR &kp LBRC &kp RBRC &kp LBKT &kp RBKT
 //
 //      -----------------------------------------------------------------------------------------------------------
 //
-        &none &none &none &none &none &none        &none &none &none &none &none &none
+        &none &none &none &none &none &none        &kp SQT &kp DQT &kp EXCL &kp EQUAL &kp COLON &kp SEMICOLON
 //
 //      -----------------------------------------------------------------------------------------------------------
 //
-        &none &none &none &none &none &none        &none &none &none &none &none &none
+        &none &none &none &none &none &none        &kp LT &kp GT &kp COMMA &kp DOT &kp QMARK &kp GRAVE
 //
 //      -----------------------------------------------------------------------------------------------------------
 //
-                          &none &none &none        &none &none &none
+                          &none &none &none        &kp BSLH &kp PIPE &kp FSLH
 //
 //      --------------------------------------------------------------------------------------------------------
 
