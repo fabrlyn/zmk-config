@@ -24,7 +24,7 @@
     };
     navigation_keymap {
       timeout-ms = <50>;
-      key-positions = <12 38>;
+      key-positions = <12 37>;
       bindings = <&mo NAVIGATION>;
     };
   };
@@ -43,11 +43,11 @@
 //
 //      ---------------------------------------------------------------------------------------------------
 //
-        &kp LSHFT &kp Z &kp X &kp C    &kp V          &kp B &kp N   &kp M &none   &none  &none &none
+        &kp LSHFT &kp Z &kp X &kp C    &kp V          &kp B &kp N   &kp M &none   &none  &none &kp LEFT_GUI
 //
 //      ---------------------------------------------------------------------------------------------------
 //
-                              &mo NUMBERS &kp SPACE &mo SYMBOLS    &none &none &kp LCTRL
+                              &mo NUMBERS &mo SYMBOLS &kp SPACE &none &none &kp LCTRL
 //
 //      ---------------------------------------------------------------------------------------------------
 
@@ -93,7 +93,7 @@
 //
 //      -----------------------------------------------------------------------------------------------------------
 //
-                          &none &none &none        &kp BSLH &kp PIPE &kp FSLH
+                          &none &none &none        &kp FSLH &kp PIPE &kp BSLH
 //
 //      --------------------------------------------------------------------------------------------------------
 
