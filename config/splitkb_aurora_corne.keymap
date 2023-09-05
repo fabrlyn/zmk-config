@@ -54,7 +54,7 @@
 //
 //      ---------------------------------------------------------------------------------------------------
 //
-        &kp LCTRL &kp Z &kp X &kp C    &kp V          &kp B &kp N   &kp M &none   &kp RIGHT_ALT &kp RIGHT_GUI &kp RCTRL
+        &kp LCTRL &kp Z &kp X &kp C    &kp V          &kp B &kp N   &kp M &none  &kp RIGHT_ALT &kp RIGHT_CONTROL &kp RIGHT_GUI
 //
 //      ---------------------------------------------------------------------------------------------------
 //
