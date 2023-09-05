@@ -38,6 +38,11 @@
       key-positions = <36 39>;
       bindings = <&mo F_NUMBERS>;
     };
+    left_gui {
+      timeout-ms = <50>;
+      key-positions = <24 37>;
+      bindings = <&kp LEFT_GUI>;
+    };
   };
   keymap {
     compatible = "zmk,keymap";
