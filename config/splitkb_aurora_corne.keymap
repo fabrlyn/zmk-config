@@ -49,23 +49,27 @@
     default {
       bindings =
         <
-//      ---------------------------------------------------------------------------------------------------
-//
-        &kp TAB   &kp Q &kp W &kp E    &kp R          &kp T &kp Y   &kp U &kp I   &kp O &kp P &kp BSPC
-//
-//      ---------------------------------------------------------------------------------------------------
-//
-        &kp LSHFT &kp A &kp S &kp D    &kp F          &kp G &kp H   &kp J &kp K   &kp L &kp RSHFT &kp RET
-//
-//      ---------------------------------------------------------------------------------------------------
-//
-        &kp LCTRL &kp Z &kp X &kp C    &kp V          &kp B &kp N   &kp M &none  &kp RIGHT_ALT &kp RIGHT_CONTROL &kp RIGHT_GUI
-//
-//      ---------------------------------------------------------------------------------------------------
-//
-                              &mo NUMBERS &mo SYMBOLS &kp SPACE &kp ESCAPE &none &kp LCTRL
-//
-//      ---------------------------------------------------------------------------------------------------
+//|---------------|----------------|----------------|----------------|----------------|----------------|
+//|
+    &kp TAB        &kp Q &kp W &kp E    &kp R          &kp T &kp Y   &kp U &kp I   &kp O &kp P &kp BSPC
+//|
+//|---------------|----------------------------------------------------------------------------------------
+//|
+    &kp LSHFT      &kp A &kp S &kp D    &kp F          &kp G &kp H   &kp J &kp K   &kp L &kp RSHFT &kp RET
+//|
+//|---------------|----------------------------------------------------------------------------------------
+//|
+    &kp LCTRL      &kp Z &kp X &kp C    &kp V          &kp B &kp N   &kp M &mo SYMBOLS &kp RIGHT_ALT &kp RIGHT_CONTROL &kp RIGHT_GUI
+//|
+//|---------------|----------------------------------------------------------------------------------------
+//|
+    &mo NUMBERS    &none &lt SYMBOLS SPACE &kp ESCAPE &none &none
+//|
+//|---------------|----------------------------------------------------------------------------------------
+
+
+
+&mt RIGHT_CONTROL SPACE
 
         >;
     };
@@ -101,16 +105,16 @@
 //
 //      -----------------------------------------------------------------------------------------------------------
 //
-        &kp QUESTION &none &none &none &kp AMPERSAND &kp ASTERISK &kp LEFT_BRACE &kp RIGHT_BRACE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COLON &kp SEMICOLON
+        &kp QUESTION &none &kp UNDERSCORE &kp MINUS &kp AMPERSAND &kp ASTERISK &kp LEFT_BRACE &kp RIGHT_BRACE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COLON &kp SEMICOLON
 //
 //      -----------------------------------------------------------------------------------------------------------
 //
-        &none &none &none &none &kp TILDE &kp GRAVE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp COMMA &kp DOT &kp MINUS &kp UNDERSCORE
+        &none &none &none &none &kp TILDE &kp GRAVE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp COMMA &kp DOT &kp SPACE &none
 //
 //      -----------------------------------------------------------------------------------------------------------
 //
                           &none &none &none        &kp FSLH &kp PIPE &kp BSLH
-//
+
 //      --------------------------------------------------------------------------------------------------------
 
         >;
@@ -124,7 +128,7 @@
 //
 //      -----------------------------------------------------------------------------------------------------------
 //
-        &none &none &none &none &none &none        &none &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &none &none
+        &none &kp NUMBER_0 &none &none &none &none        &none &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_0 &none
 //
 //      -----------------------------------------------------------------------------------------------------------
 //
