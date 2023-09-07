@@ -49,11 +49,12 @@
     default {
       bindings =
         <
-    &kp TAB            &kp Q            &kp W            &kp E            &kp R            &kp T            &kp Y              &kp U            &kp I            &kp O            &kp P            &kp BSPC
-    &kp LSHFT          &kp A            &kp S            &kp D            &kp F            &kp G            &kp H              &kp J            &kp K            &kp L            &kp RSHFT        &kp RET
-    &kp LCTRL          &kp Z            &kp X            &kp C            &kp V            &kp B            &kp N              &kp M            &mo SYMBOLS      &kp RIGHT_ALT    &kp RIGHT_CONTROL &kp RIGHT_GUI
-    &none &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE &none &none
-
+        // #---------|-----|-----|------------|-----------|-----------------#----------|-----|-------------|-----|-----------------|---------------#
+            &kp TAB   &kp Q &kp W &kp E        &kp R       &kp T             &kp Y      &kp U &kp I         &kp O &kp P             &kp BSPC
+            &kp LSHFT &kp A &kp S &kp D        &kp F       &kp G             &kp H      &kp J &kp K         &kp L &kp RSHFT         &kp RET
+            &kp LCTRL &kp Z &kp X &kp C        &kp V       &kp B             &kp N      &kp M &none         &none &kp RIGHT_CONTROL &kp RIGHT_GUI
+                                  &kp LEFT_ALT &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE &none &kp RIGHT_ALT
+        // #---------|-----|-----|------------|-----------|-----------------#----------|-----|-------------|-----|-----------------|---------------#
         >;
     };
     bluetooth {
