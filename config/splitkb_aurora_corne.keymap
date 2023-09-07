@@ -28,11 +28,6 @@
       key-positions = <12 37>;
       bindings = <&mo NAVIGATION>;
     };
-    esc {
-      timeout-ms = <50>;
-      key-positions = <12 38>;
-      bindings = <&kp ESC>;
-    };
     f_numbers {
       timeout-ms = <50>;
       key-positions = <36 39>;
