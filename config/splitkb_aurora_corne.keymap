@@ -18,17 +18,17 @@
 / {
   combos {
     compatible = "zmk,combos";
-    media_keymap {
+    bluetooth_layer {
       timeout-ms = <50>;
       key-positions = <0 36>;
       bindings = <&mo BLUETOOTH>;
     };
-    navigation_keymap {
+    navigation_layer {
       timeout-ms = <50>;
       key-positions = <12 37>;
       bindings = <&mo NAVIGATION>;
     };
-    f_numbers {
+    f_numbers_layer {
       timeout-ms = <50>;
       key-positions = <37 40>;
       bindings = <&mo F_NUMBERS>;
