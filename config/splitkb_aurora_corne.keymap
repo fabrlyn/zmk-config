@@ -30,7 +30,7 @@
     };
     f_numbers {
       timeout-ms = <50>;
-      key-positions = <36 39>;
+      key-positions = <37 40>;
       bindings = <&mo F_NUMBERS>;
     };
     left_gui {
