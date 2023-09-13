@@ -9,6 +9,10 @@
 #define NAVIGATION 4
 #define BLUETOOTH  5
 
+&lt {
+  tapping-term-ms = <100>;
+};
+
 / {
   combos {
     compatible = "zmk,combos";
