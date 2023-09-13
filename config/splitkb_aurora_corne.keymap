@@ -74,16 +74,16 @@
     numbers {
       bindings =
         <
-        // #--------------|------------|-----------------|---------------|----------------|----------#-----|------------|------------|------------|------------|-------------#
-            &kp C_PREVIOUS &kp C_MUTE   &kp C_VOLUME_DOWN &kp C_VOLUME_UP &kp C_PLAY_PAUSE &kp C_NEXT &none &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &none        &kp BACKSPACE
+        // #--------------|--------------------|--------------------|---------------------------------|--------------------------------------|----------#-----|------------|------------|------------|------------|-------------#
+            &kp C_PREVIOUS &kp C_MUTE           &kp C_VOLUME_DOWN    &kp C_VOLUME_UP                   &kp C_PLAY_PAUSE                       &kp C_NEXT &none &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &none        &kp BACKSPACE
 
-            &none          &kp NUMBER_0 &none             &none           &none            &none      &none &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_0 &none
+            &none          &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS &none      &none &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_0 &none
 
-            &none          &none        &none             &none           &none            &none      &none &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &none        &none
+            &none          &none                &none                &none                             &none                                  &none      &none &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &none        &none
 
-                                                          &none           &none            &none      &none &kp NUMBER_0 &none
+                                                                     &none                             &none                                  &none      &none &none        &none
 
-        // #--------------|------------|-----------------|---------------|----------------|----------#-----|------------|------------|------------|------------|-------------#
+        // #--------------|--------------------|--------------------|---------------------------------|--------------------------------------|----------#-----|------------|------------|------------|------------|-------------#
         >;
     };
     f_numbers {
