@@ -11,20 +11,34 @@
 
 #define 🔲 &none
 
-#define  0️⃣  &kp NUMBER_0
-#define  1️⃣  &kp NUMBER_1
-#define  2️⃣  &kp NUMBER_2
-#define  3️⃣  &kp NUMBER_3
-#define  4️⃣  &kp NUMBER_4
-#define  5️⃣  &kp NUMBER_5
-#define  6️⃣  &kp NUMBER_6
-#define  7️⃣  &kp NUMBER_7
-#define  8️⃣  &kp NUMBER_8
-#define  9️⃣  &kp NUMBER_9
+#define 0️⃣ &kp NUMBER_0
+#define 1️⃣ &kp NUMBER_1
+#define 2️⃣ &kp NUMBER_2
+#define 3️⃣ &kp NUMBER_3
+#define 4️⃣ &kp NUMBER_4
+#define 5️⃣ &kp NUMBER_5
+#define 6️⃣ &kp NUMBER_6
+#define 7️⃣ &kp NUMBER_7
+#define 8️⃣ &kp NUMBER_8
+#define 9️⃣ &kp NUMBER_9
 
-#define ⏮️  &kp C_PREVIOUS
-#define ⏭️  &kp C_NEXT
-#define ⏯️  &kp C_PLAY_PAUSE
+#define ❄️0️⃣   &kp F0
+#define ❄️1️⃣   &kp F1
+#define ❄️2️⃣   &kp F2
+#define ❄️3️⃣   &kp F3
+#define ❄️4️⃣   &kp F4
+#define ❄️5️⃣   &kp F5
+#define ❄️6️⃣   &kp F6
+#define ❄️7️⃣   &kp F7
+#define ❄️8️⃣   &kp F8
+#define ❄️9️⃣   &kp F9
+#define ❄️1️⃣0️⃣  &kp F10
+#define ❄️1️⃣1️⃣  &kp F11
+#define ❄️1️⃣2️⃣  &kp F12
+
+#define ⏮️ &kp C_PREVIOUS
+#define ⏭️ &kp C_NEXT
+#define ⏯️ &kp C_PLAY_PAUSE
 #define 🔇 &kp C_MUTE
 #define 🔈 &kp C_VOLUME_DOWN
 #define 🔊 &kp C_VOLUME_UP
@@ -102,25 +116,25 @@
     numbers {
       bindings =
         <
-          ⏮️ 🔇 🔈 🔊 ⏯️ ⏭️ 🔲 1️⃣ 2️⃣ 3️⃣ 🔲 🚭
+          ⏮️   🔇   🔈   🔊   ⏯️   ⏭️         🔲   1️⃣   2️⃣   3️⃣   🔲   🚭
 
-          🔲 🔅 🔆 🪟 🧰 🔲 🔲 4️⃣ 5️⃣ 6️⃣ 0️⃣ 🔲
+          🔲   🔅   🔆   🪟   🧰   🔲         🔲   4️⃣   5️⃣   6️⃣   0️⃣   🔲
 
-          🔲 🔲 🔲 🔲 🔲 🔲 🔲 7️⃣ 8️⃣ 9️⃣ 🔲 🔲
+          🔲   🔲   🔲   🔲   🔲   🔲         🔲   7️⃣   8️⃣   9️⃣   🔲   🔲
 
-                   🔲 🔲 🔲 🔲 🔲 🔲
+                            🔲   🔲   🔲    🔲   🔲   🔲
         >;
     };
     f_numbers {
       bindings =
         <
-            🔲 🔲 🔲 🔲 🔲 🔲     🔲 &kp F1 &kp F2 &kp F3 &kp F10 🔲
+          🔲   🔲   🔲   🔲   🔲   🔲         🔲  ❄️1️⃣  ❄️2️⃣  ❄️3️⃣  ❄️1️⃣0️⃣ 🔲
 
-            🔲 🔲 🔲 🔲 🔲 🔲     🔲 &kp F4 &kp F5 &kp F6 &kp F11 🔲
+          🔲   🔲   🔲   🔲   🔲   🔲         🔲  ❄️4️⃣  ❄️5️⃣  ❄️6️⃣  ❄️1️⃣0️⃣ 🔲
 
-            🔲 🔲 🔲 🔲 🔲 🔲     🔲 &kp F7 &kp F8 &kp F9 &kp F12 🔲
+          🔲   🔲   🔲   🔲   🔲   🔲         🔲  ❄️7️⃣  ❄️8️⃣  ❄️9️⃣  ❄️1️⃣2️⃣ 🔲
 
-                     🔲 🔲 🔲     🔲 🔲     🔲
+                            🔲   🔲   🔲    🔲   🔲   🔲
         >;
     };
     navigation {
