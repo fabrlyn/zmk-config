@@ -49,6 +49,15 @@
 #define 🪟 &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
 #define 🚭 &kp BACKSPACE
 
+#define 🍵🔚 &kp END
+#define 🏠   &kp HOME
+#define ⬅️   &kp LEFT
+#define ⬇️   &kp DOWN
+#define ⬆️   &kp UP
+#define 👉   &kp RIGHT
+#define ⤵️   &kp PAGE_DOWN
+#define ⤴️   &kp PAGE_UP
+
 &lt {
   tapping-term-ms = <100>;
 };
@@ -84,8 +93,6 @@
     default {
       bindings =
         <
-        // #---------|-----|-----|------------|-----------|-----------------#----------|-----|-------------|-----|-----------------|--------------#
-
             &kp TAB   &kp Q &kp W &kp E        &kp R       &kp T             &kp Y      &kp U &kp I         &kp O &kp P             &kp BSPC
 
             &kp LSHFT &kp A &kp S &kp D        &kp F       &kp G             &kp H      &kp J &kp K         &kp L &kp RSHFT         &kp RET
@@ -93,15 +100,11 @@
             &kp LCTRL &kp Z &kp X &kp C        &kp V       &kp B             &kp N      &kp M 🔲         🔲 &kp RIGHT_CONTROL &kp RIGHT_GUI
 
                                   &kp LEFT_ALT &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE 🔲 &kp RIGHT_ALT
-
-        // #---------|-----|-----|------------|-----------|-----------------#----------|-----|-------------|-----|-----------------|--------------#
         >;
     };
     symbols {
       bindings =
         <
-        // #---------------|-----------|--------------|----------|-------------|------------#--------------------|---------------------|----------------|-----------------|-------------|-----------------#
-
             &kp EXCLAMATION &kp AT_SIGN &kp HASH       &kp DOLLAR &kp PERCENT   &kp CARET    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp PLUS         &kp EQUAL         &kp LESS_THAN &kp GREATER_THAN
 
             &kp QUESTION    🔲       &kp UNDERSCORE &kp MINUS  &kp AMPERSAND &kp ASTERISK &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COLON     &kp SEMICOLON
@@ -109,8 +112,6 @@
             🔲           🔲       🔲          🔲      &kp TILDE     &kp GRAVE    &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp COMMA        &kp DOT           &kp SPACE     🔲
 
                                                        🔲      🔲         🔲        &kp FSLH             &kp PIPE              &kp BSLH
-
-        // #---------------|-----------|--------------|----------|-------------|------------#--------------------|---------------------|----------------|-----------------|-------------|-----------------#
         >;
     };
     numbers {
@@ -140,13 +141,13 @@
     navigation {
       bindings =
         <
-            🔲 🔲 🔲 🔲 🔲 🔲     🔲       🔲       🔲     🔲        &kp END       &kp HOME
+          🔲   🔲   🔲   🔲   🔲   🔲         🔲   🔲   🔲   🔲   🍵🔚 🏠
 
-            🔲 🔲 🔲 🔲 🔲 🔲     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp PAGE_DOWN &kp PAGE_UP
+          🔲   🔲   🔲   🔲   🔲   🔲         ⬅️   ⬇️   ⬆️   👉   ⤵️   ⤴️
 
-            🔲 🔲 🔲 🔲 🔲 🔲     🔲       🔲       🔲     🔲        🔲            🔲
+          🔲   🔲   🔲   🔲   🔲   🔲         🔲   🔲   🔲   🔲   🔲   🔲  
 
-                     🔲 🔲 🔲     🔲       🔲       🔲
+                            🔲   🔲   🔲    🔲   🔲   🔲
         >;
     };
     bluetooth {
@@ -163,4 +164,3 @@
     };
   };
 };
-
