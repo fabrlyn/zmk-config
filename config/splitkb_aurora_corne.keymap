@@ -11,6 +11,37 @@
 
 #define BLACK_SQUARE_BUTTON &none
 
+#define ABCA &kp A
+#define ABCB &kp B
+#define ABCC &kp C
+#define ABCD &kp D
+#define ABCE &kp E
+#define ABCF &kp F
+#define ABCG &kp G
+#define ABCH &kp H
+#define ABCI &kp I
+#define ABCJ &kp J
+#define ABCK &kp K
+#define ABCL &kp L
+#define ABCM &kp M
+#define ABCN &kp N
+#define ABCO &kp O
+#define ABCP &kp P
+#define ABCQ &kp Q
+#define ABCR &kp R
+#define ABCS &kp S
+#define ABCT &kp T
+#define ABCQ &kp Q
+#define ABCU &kp U
+#define ABCV &kp V
+#define ABCW &kp W
+#define ABCX &kp X
+#define ABCY &kp Y
+#define ABCZ &kp Z
+
+#define ARROW_LEFTARROW_UP &kp LSHFT
+#define️ POINT_RIGHTARROW_UP &kp RSHFT
+
 #define ZERO &kp NUMBER_0
 #define ONE &kp NUMBER_1
 #define TWO &kp NUMBER_2
@@ -93,24 +124,18 @@
     default {
       bindings =
         <
-        // #---------|-----|-----|------------|-----------|-----------------#----------|-----|-------------|-----|-----------------|--------------#
+            &kp TAB  ABCQ  ABCW  ABCE ABCR     ABCT             ABCY      ABCU ABCI ABCO ABCP              &kp BSPC
 
-            &kp TAB   &kp Q &kp W &kp E        &kp R       &kp T             &kp Y      &kp U &kp I         &kp O &kp P             &kp BSPC
+            ⬅️️ARROW_UP  ABCA ABCS  ABCD        ABCF ABCG ABCH    ABCJ  ABCK ABCL  POINT_RIGHTARROW_UP  &kp RET
 
-            &kp LSHFT &kp A &kp S &kp D        &kp F       &kp G             &kp H      &kp J &kp K         &kp L &kp RSHFT         &kp RET
-
-            &kp LCTRL &kp Z &kp X &kp C        &kp V       &kp B             &kp N      &kp M BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON &kp RIGHT_CONTROL &kp RIGHT_GUI
+            &kp LCTRL ABCZ ABCX  ABCC ABCV       ABCB             ABCN      ABCM  BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON &kp RIGHT_CONTROL &kp RIGHT_GUI
 
                                   &kp LEFT_ALT &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE BLACK_SQUARE_BUTTON &kp RIGHT_ALT
-
-        // #---------|-----|-----|------------|-----------|-----------------#----------|-----|-------------|-----|-----------------|--------------#
         >;
     };
     symbols {
       bindings =
         <
-        // #---------------|-----------|--------------|----------|-------------|------------#--------------------|---------------------|----------------|-----------------|-------------|-----------------#
-
             &kp EXCLAMATION &kp AT_SIGN &kp HASH       &kp DOLLAR &kp PERCENT   &kp CARET    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp PLUS         &kp EQUAL         &kp LESS_THAN &kp GREATER_THAN
 
             &kp QUESTION    BLACK_SQUARE_BUTTON       &kp UNDERSCORE &kp MINUS  &kp AMPERSAND &kp ASTERISK &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COLON     &kp SEMICOLON
@@ -118,8 +143,6 @@
             BLACK_SQUARE_BUTTON           BLACK_SQUARE_BUTTON       BLACK_SQUARE_BUTTON          BLACK_SQUARE_BUTTON      &kp TILDE     &kp GRAVE    &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp COMMA        &kp DOT           &kp SPACE     BLACK_SQUARE_BUTTON
 
                                                        BLACK_SQUARE_BUTTON      BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON        &kp FSLH             &kp PIPE              &kp BSLH
-
-        // #---------------|-----------|--------------|----------|-------------|------------#--------------------|---------------------|----------------|-----------------|-------------|-----------------#
         >;
     };
     numbers {
