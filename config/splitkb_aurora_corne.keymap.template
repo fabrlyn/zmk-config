@@ -11,36 +11,38 @@
 
 #define 🔲 &none
 
-#define 🔤A &kp A
-#define 🔤B &kp B
-#define 🔤C &kp C
-#define 🔤D &kp D
-#define 🔤E &kp E
-#define 🔤F &kp F
-#define 🔤G &kp G
-#define 🔤H &kp H
-#define 🔤I &kp I
-#define 🔤J &kp J
-#define 🔤K &kp K
-#define 🔤L &kp L
-#define 🔤M &kp M
-#define 🔤N &kp N
-#define 🔤O &kp O
-#define 🔤P &kp P
-#define 🔤Q &kp Q
-#define 🔤R &kp R
-#define 🔤S &kp S
-#define 🔤T &kp T
-#define 🔤Q &kp Q
-#define 🔤U &kp U
-#define 🔤V &kp V
-#define 🔤W &kp W
-#define 🔤X &kp X
-#define 🔤Y &kp Y
-#define 🔤Z &kp Z
+#define a &kp A
+#define b &kp B
+#define c &kp C
+#define d &kp D
+#define e &kp E
+#define f &kp F
+#define g &kp G
+#define h &kp H
+#define i &kp I
+#define j &kp J
+#define k &kp K
+#define l &kp L
+#define m &kp M
+#define n &kp N
+#define o &kp O
+#define p &kp P
+#define q &kp Q
+#define r &kp R
+#define s &kp S
+#define t &kp T
+#define q &kp Q
+#define u &kp U
+#define v &kp V
+#define w &kp W
+#define x &kp X
+#define y &kp Y
+#define z &kp Z
 
 #define ⬅️⬆️  &kp LSHFT
-#define 👉⬆️ &kp RSHFT
+#define 👉⬆️  &kp RSHFT
+#define 🐇    &kp TAB
+#define ↩     &kp RET 
 
 #define 0️⃣ &kp NUMBER_0
 #define 1️⃣ &kp NUMBER_1
@@ -124,13 +126,13 @@
     default {
       bindings =
         <
-            &kp TAB  🔤Q  🔤W  🔤E 🔤R     🔤T             🔤Y      🔤U 🔤I 🔤O 🔤P              &kp BSPC
+            🐇 q w e r t y u i o p 🚭 
 
-            ⬅️⬆️  🔤A 🔤S  🔤D        🔤F 🔤G 🔤H    🔤J  🔤K 🔤L  👉⬆️  &kp RET
+            ⬅️⬆️       a s d f g h j k l 👉⬆️ ↩
 
-            &kp LCTRL 🔤Z 🔤X  🔤C 🔤V       🔤B             🔤N      🔤M  🔲         🔲 &kp RIGHT_CONTROL &kp RIGHT_GUI
+            &kp LCTRL z x c v b n m  🔲 🔲 &kp RIGHT_CONTROL &kp RIGHT_GUI
 
-                                  &kp LEFT_ALT &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE 🔲 &kp RIGHT_ALT
+           &kp LEFT_ALT &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE 🔲 &kp RIGHT_ALT
         >;
     };
     symbols {

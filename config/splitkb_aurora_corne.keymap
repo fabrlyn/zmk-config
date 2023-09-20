@@ -11,36 +11,38 @@
 
 #define BLACK_SQUARE_BUTTON &none
 
-#define ABCA &kp A
-#define ABCB &kp B
-#define ABCC &kp C
-#define ABCD &kp D
-#define ABCE &kp E
-#define ABCF &kp F
-#define ABCG &kp G
-#define ABCH &kp H
-#define ABCI &kp I
-#define ABCJ &kp J
-#define ABCK &kp K
-#define ABCL &kp L
-#define ABCM &kp M
-#define ABCN &kp N
-#define ABCO &kp O
-#define ABCP &kp P
-#define ABCQ &kp Q
-#define ABCR &kp R
-#define ABCS &kp S
-#define ABCT &kp T
-#define ABCQ &kp Q
-#define ABCU &kp U
-#define ABCV &kp V
-#define ABCW &kp W
-#define ABCX &kp X
-#define ABCY &kp Y
-#define ABCZ &kp Z
+#define a &kp A
+#define b &kp B
+#define c &kp C
+#define d &kp D
+#define e &kp E
+#define f &kp F
+#define g &kp G
+#define h &kp H
+#define i &kp I
+#define j &kp J
+#define k &kp K
+#define l &kp L
+#define m &kp M
+#define n &kp N
+#define o &kp O
+#define p &kp P
+#define q &kp Q
+#define r &kp R
+#define s &kp S
+#define t &kp T
+#define q &kp Q
+#define u &kp U
+#define v &kp V
+#define w &kp W
+#define x &kp X
+#define y &kp Y
+#define z &kp Z
 
 #define ARROW_LEFTARROW_UP  &kp LSHFT
-#define POINT_RIGHTARROW_UP &kp RSHFT
+#define POINT_RIGHTARROW_UP  &kp RSHFT
+#define RABBIT2    &kp TAB
+#define LEFTWARDS_ARROW_WITH_HOOK     &kp RET 
 
 #define ZERO &kp NUMBER_0
 #define ONE &kp NUMBER_1
@@ -124,13 +126,13 @@
     default {
       bindings =
         <
-            &kp TAB  ABCQ  ABCW  ABCE ABCR     ABCT             ABCY      ABCU ABCI ABCO ABCP              &kp BSPC
+            RABBIT2 q w e r t y u i o p NO_SMOKING 
 
-            ARROW_LEFTARROW_UP  ABCA ABCS  ABCD        ABCF ABCG ABCH    ABCJ  ABCK ABCL  POINT_RIGHTARROW_UP  &kp RET
+            ARROW_LEFTARROW_UP       a s d f g h j k l POINT_RIGHTARROW_UP LEFTWARDS_ARROW_WITH_HOOK
 
-            &kp LCTRL ABCZ ABCX  ABCC ABCV       ABCB             ABCN      ABCM  BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON &kp RIGHT_CONTROL &kp RIGHT_GUI
+            &kp LCTRL z x c v b n m  BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON &kp RIGHT_CONTROL &kp RIGHT_GUI
 
-                                  &kp LEFT_ALT &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE BLACK_SQUARE_BUTTON &kp RIGHT_ALT
+           &kp LEFT_ALT &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE BLACK_SQUARE_BUTTON &kp RIGHT_ALT
         >;
     };
     symbols {
