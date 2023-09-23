@@ -43,6 +43,9 @@
 #define 👉⬆️  &kp RSHFT
 #define 🐇    &kp TAB
 #define ↩     &kp RET 
+#define 👈🕹  &kp LCTRL
+#define 👉🕹  &kp RCTRL
+#define 👉🍎  &kp RIGHT_GUI
 
 #define 0️⃣ &kp NUMBER_0
 #define 1️⃣ &kp NUMBER_1
@@ -126,11 +129,11 @@
     default {
       bindings =
         <
-            🐇 q w e r t y u i o p 🚭 
+            🐇   q   w   e   r   t         y   u   i   o   p   🚭 
 
-            ⬅️⬆️       a s d f g h j k l 👉⬆️ ↩
+            ⬅️⬆️ a   s   d   f   g         h   j   k   l   👉⬆️ ↩
 
-            &kp LCTRL z x c v b n m  🔲 🔲 &kp RIGHT_CONTROL &kp RIGHT_GUI
+            👈🕹️ z   x   c   v   b         n   m   🔲  🔲   👉🕹️ 👉🍎
 
            &kp LEFT_ALT &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE 🔲 &kp RIGHT_ALT
         >;

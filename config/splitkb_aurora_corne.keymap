@@ -43,6 +43,9 @@
 #define POINT_RIGHTARROW_UP  &kp RSHFT
 #define RABBIT2    &kp TAB
 #define LEFTWARDS_ARROW_WITH_HOOK     &kp RET 
+#define POINT_LEFTJOYSTICK  &kp LCTRL
+#define POINT_RIGHTJOYSTICK  &kp RCTRL
+#define POINT_RIGHTAPPLE  &kp RIGHT_GUI
 
 #define ZERO &kp NUMBER_0
 #define ONE &kp NUMBER_1
@@ -126,11 +129,11 @@
     default {
       bindings =
         <
-            RABBIT2 q w e r t y u i o p NO_SMOKING 
+            RABBIT2   q   w   e   r   t         y   u   i   o   p   NO_SMOKING 
 
-            ARROW_LEFTARROW_UP       a s d f g h j k l POINT_RIGHTARROW_UP LEFTWARDS_ARROW_WITH_HOOK
+            ARROW_LEFTARROW_UP a   s   d   f   g         h   j   k   l   POINT_RIGHTARROW_UP LEFTWARDS_ARROW_WITH_HOOK
 
-            &kp LCTRL z x c v b n m  BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON &kp RIGHT_CONTROL &kp RIGHT_GUI
+            POINT_LEFTJOYSTICK z   x   c   v   b         n   m   BLACK_SQUARE_BUTTON  BLACK_SQUARE_BUTTON   POINT_RIGHTJOYSTICK POINT_RIGHTAPPLE
 
            &kp LEFT_ALT &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE BLACK_SQUARE_BUTTON &kp RIGHT_ALT
         >;
