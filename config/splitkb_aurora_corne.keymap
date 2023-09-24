@@ -39,6 +39,8 @@
 #define y &kp Y
 #define z &kp Z
 
+#define alt &kp LEFT_ALT
+
 #define ARROW_LEFTARROW_UP  &kp LSHFT
 #define POINT_RIGHTARROW_UP  &kp RSHFT
 #define RABBIT2    &kp TAB
@@ -57,6 +59,8 @@
 #define SEVEN &kp NUMBER_7
 #define EIGHT &kp NUMBER_8
 #define NINE &kp NUMBER_9
+
+#define MUSICAL_KEYBOARD1234 &mo NUMBERS
 
 #define SNOWFLAKEZERO   &kp F0
 #define SNOWFLAKEONE   &kp F1
@@ -93,6 +97,10 @@
 #define POINT_RIGHT   &kp RIGHT
 #define ARROW_HEADING_DOWN   &kp PAGE_DOWN
 #define ARROW_HEADING_UP   &kp PAGE_UP
+
+#define SYMBOLSMILKY_WAY &lt SYMBOLS SPACE
+#define STOP_SIGN &kp ESCAPE
+
 
 &lt {
   tapping-term-ms = <100>;
@@ -135,7 +143,7 @@
 
             POINT_LEFTJOYSTICK z   x   c   v   b         n   m   BLACK_SQUARE_BUTTON  BLACK_SQUARE_BUTTON   POINT_RIGHTJOYSTICK POINT_RIGHTAPPLE
 
-           &kp LEFT_ALT &mo NUMBERS &lt SYMBOLS SPACE &kp ESCAPE BLACK_SQUARE_BUTTON &kp RIGHT_ALT
+                           alt MUSICAL_KEYBOARD1234  SYMBOLSMILKY_WAY  STOP_SIGN   BLACK_SQUARE_BUTTON   alt 
         >;
     };
     symbols {
