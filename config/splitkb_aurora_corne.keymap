@@ -9,8 +9,6 @@
 #define NAVIGATION 4
 #define BLUETOOTH  5
 
-#define BLACK_SQUARE_BUTTON &none
-
 #define a &kp A
 #define b &kp B
 #define c &kp C
@@ -28,10 +26,10 @@
 #define o &kp O
 #define p &kp P
 #define q &kp Q
+#define q &kp Q
 #define r &kp R
 #define s &kp S
 #define t &kp T
-#define q &kp Q
 #define u &kp U
 #define v &kp V
 #define w &kp W
@@ -39,86 +37,82 @@
 #define y &kp Y
 #define z &kp Z
 
-#define alt &kp LEFT_ALT
+#define n0 &kp NUMBER_0
+#define n1 &kp NUMBER_1
+#define n2 &kp NUMBER_2
+#define n3 &kp NUMBER_3
+#define n4 &kp NUMBER_4
+#define n5 &kp NUMBER_5
+#define n6 &kp NUMBER_6
+#define n7 &kp NUMBER_7
+#define n8 &kp NUMBER_8
+#define n9 &kp NUMBER_9
 
-#define ARROW_LEFTARROW_UP  &kp LSHFT
-#define POINT_RIGHTARROW_UP  &kp RSHFT
-#define RABBIT2    &kp TAB
-#define LEFTWARDS_ARROW_WITH_HOOK     &kp RET 
-#define POINT_LEFTJOYSTICK  &kp LCTRL
-#define POINT_RIGHTJOYSTICK  &kp RCTRL
-#define POINT_RIGHTAPPLE  &kp RIGHT_GUI
+#define fn0  &kp F0
+#define fn1  &kp F1
+#define fn2  &kp F2
+#define fn3  &kp F3
+#define fn4  &kp F4
+#define fn5  &kp F5
+#define fn6  &kp F6
+#define fn7  &kp F7
+#define fn8  &kp F8
+#define fn9  &kp F9
+#define fn10 &kp F10
+#define fn11 &kp F11
+#define fn12 &kp F12
 
-#define ZERO &kp NUMBER_0
-#define ONE &kp NUMBER_1
-#define TWO &kp NUMBER_2
-#define THREE &kp NUMBER_3
-#define FOUR &kp NUMBER_4
-#define FIVE &kp NUMBER_5
-#define SIX &kp NUMBER_6
-#define SEVEN &kp NUMBER_7
-#define EIGHT &kp NUMBER_8
-#define NINE &kp NUMBER_9
+#define backspace             &kp BACKSPACE
+#define comma                 &kp COMMA
+#define down                  &kp DOWN
+#define end                   &kp END
+#define enter                 &kp ENTER
+#define high_brightness       &kp C_BRIGHTNESS_INC
+#define home                  &kp HOME
+#define left_alt              &kp LEFT_ALT
+#define lctrl                 &kp LEFT_CONTROL
+#define left                  &kp LEFT
+#define lock_screen           &kp C_AL_LOCK
+#define loud_sound            &kp C_VOLUME_UP
+#define low_brightness        &kp C_BRIGHTNESS_DEC
+#define mute                  &kp C_MUTE
+#define next_track_button     &kp C_NEXT
+#define page_down             &kp PAGE_DOWN
+#define page_up               &kp PAGE_UP
+#define period                &kp PERIOD
+#define play_or_pause_button  &kp C_PLAY_PAUSE
+#define previous_track_button &kp C_PREVIOUS
+#define ralt                  &kp RIGHT_ALT
+#define rctrl                 &kp RIGHT_CONTROL
+#define rgui                  &kp RIGHT_GUI
+#define right                 &kp RIGHT
+#define rshift                &kp RIGHT_SHIFT 
+#define space                 &kp SPACE
+#define speaker               &kp C_VOLUME_DOWN
+#define tab                   &kp TAB
+#define toolbox               &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
+#define up                    &kp UP
+#define window                &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
 
-#define MUSICAL_KEYBOARD1234 &mo NUMBERS
+#define bt0         &bt BT_SEL 0
+#define bt1         &bt BT_SEL 1
+#define bt2         &bt BT_SEL 2
+#define bt3         &bt BT_SEL 3
+#define bt4         &bt BT_SEL 4
+#define bt_clear    &bt BT_CLR
+#define bt_next     &bt BT_NXT
+#define bt_previous &bt BT_PRV
 
-#define SNOWFLAKEZERO   &kp F0
-#define SNOWFLAKEONE   &kp F1
-#define SNOWFLAKETWO   &kp F2
-#define SNOWFLAKETHREE   &kp F3
-#define SNOWFLAKEFOUR   &kp F4
-#define SNOWFLAKEFIVE   &kp F5
-#define SNOWFLAKESIX   &kp F6
-#define SNOWFLAKESEVEN   &kp F7
-#define SNOWFLAKEEIGHT   &kp F8
-#define SNOWFLAKENINE   &kp F9
-#define SNOWFLAKEONEZERO  &kp F10
-#define SNOWFLAKEONEONE  &kp F11
-#define SNOWFLAKEONETWO  &kp F12
+#define lshift_escape &mt LEFT_SHIFT ESCAPE
 
-#define PREVIOUS_TRACK_BUTTON &kp C_PREVIOUS
-#define NEXT_TRACK_BUTTON &kp C_NEXT
-#define PLAY_OR_PAUSE_BUTTON &kp C_PLAY_PAUSE
-#define MUTE &kp C_MUTE
-#define SPEAKER &kp C_VOLUME_DOWN
-#define LOUD_SOUND &kp C_VOLUME_UP
-
-#define LOW_BRIGHTNESS &kp C_BRIGHTNESS_DEC
-#define HIGH_BRIGHTNESS &kp C_BRIGHTNESS_INC
-#define TOOLBOX &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
-#define WINDOW &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
-#define NO_SMOKING &kp BACKSPACE
-
-#define TEAEND &kp END
-#define HOUSE   &kp HOME
-#define ARROW_LEFT   &kp LEFT
-#define ARROW_DOWN   &kp DOWN
-#define ARROW_UP   &kp UP
-#define POINT_RIGHT   &kp RIGHT
-#define ARROW_HEADING_DOWN   &kp PAGE_DOWN
-#define ARROW_HEADING_UP   &kp PAGE_UP
-
-#define SYMBOLSMILKY_WAY &lt SYMBOLS SPACE
-#define STOP_SIGN &kp ESCAPE
-
-#define BLUE_SQUARETOOTHZERO &bt BT_SEL 0
-#define BLUE_SQUARETOOTHONE &bt BT_SEL 1
-#define BLUE_SQUARETOOTHTWO &bt BT_SEL 2
-#define BLUE_SQUARETOOTHTHREE &bt BT_SEL 3
-#define BLUE_SQUARETOOTHFOUR &bt BT_SEL 4
-#define BLUE_SQUARETOOTHNEXT_TRACK_BUTTON &bt BT_NXT
-#define BLUE_SQUARETOOTHPREVIOUS_TRACK_BUTTON &bt BT_PRV
-#define BLUE_SQUARETOOTHSOAP &bt BT_CLR
-
-#define TVLOCK &kp C_AL_LOCK
+#define mo_numbers &mo NUMBERS
+#define mo_symbols &mo SYMBOLS
 
 &lt {
-  tapping-term-ms = <100>;
+  tapping-term-ms = <150>;
 };
 
 / {
-
-
   combos {
     compatible = "zmk,combos";
     bluetooth_layer {
@@ -147,73 +141,73 @@
     default {
       bindings =
         <
-            RABBIT2   q   w   e   r   t         y   u   i   o   p   NO_SMOKING 
+            tab q  w  e  r  t  y  u  i  o  p  backspace
 
-            ARROW_LEFTARROW_UP a   s   d   f   g         h   j   k   l   POINT_RIGHTARROW_UP LEFTWARDS_ARROW_WITH_HOOK
+           lshift_escape a  s  d  f  g  h  j  k  l  rshift enter 
 
-            POINT_LEFTJOYSTICK z   x   c   v   b         n   m   BLACK_SQUARE_BUTTON  BLACK_SQUARE_BUTTON   POINT_RIGHTJOYSTICK POINT_RIGHTAPPLE
+            lctrl z  x  c  v  b  n  m  comma period space rgui 
 
-                           alt MUSICAL_KEYBOARD1234  SYMBOLSMILKY_WAY  STOP_SIGN   BLACK_SQUARE_BUTTON   alt 
+              left_alt mo_numbers mo_symbols &none &none ralt 
         >;
     };
     symbols {
       bindings =
         <
-            &kp EXCLAMATION &kp AT_SIGN &kp HASH       &kp DOLLAR &kp PERCENT   &kp CARET    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp PLUS         &kp EQUAL         &kp LESS_THAN &kp GREATER_THAN
+            &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp PLUS &kp EQUAL &kp LESS_THAN &kp GREATER_THAN
 
-            &kp QUESTION    BLACK_SQUARE_BUTTON       &kp UNDERSCORE &kp MINUS  &kp AMPERSAND &kp ASTERISK &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COLON     &kp SEMICOLON
+            &kp QUESTION &none &kp UNDERSCORE &kp MINUS  &kp AMPERSAND &kp ASTERISK &kp LEFT_BRACE &kp RIGHT_BRACE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COLON &kp SEMICOLON
 
-            BLACK_SQUARE_BUTTON           BLACK_SQUARE_BUTTON       BLACK_SQUARE_BUTTON          BLACK_SQUARE_BUTTON      &kp TILDE     &kp GRAVE    &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp COMMA        &kp DOT           &kp SPACE     BLACK_SQUARE_BUTTON
+            &none &none &none &none &kp TILDE &kp GRAVE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp COMMA  &kp DOT &kp SPACE &none 
 
-                                                       BLACK_SQUARE_BUTTON      BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON        &kp FSLH             &kp PIPE              &kp BSLH
+                                                    &none &none &none  &kp FSLH &kp PIPE &kp BSLH
         >;
     };
     numbers {
       bindings =
         <
-          PREVIOUS_TRACK_BUTTON   MUTE   SPEAKER   LOUD_SOUND   PLAY_OR_PAUSE_BUTTON   NEXT_TRACK_BUTTON         BLACK_SQUARE_BUTTON   ONE   TWO   THREE   BLACK_SQUARE_BUTTON   NO_SMOKING
+          previous_track_button mute speaker loud_sound play_or_pause_button next_track_button &none n1 n2 n3 &none backspace
 
-          BLACK_SQUARE_BUTTON   LOW_BRIGHTNESS   HIGH_BRIGHTNESS   WINDOW   TOOLBOX   BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON   FOUR   FIVE   SIX   ZERO   BLACK_SQUARE_BUTTON
+          &none low_brightness high_brightness window toolbox &none &none n4 n5 n6 n0 &none
 
-          BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON   SEVEN   EIGHT   NINE   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON
+          &none &none &none &none &none &none &none n7 n8 n9 &none &none
 
-                            BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON    BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON
+                            &none &none &none &none &none &none
         >;
     };
     f_numbers {
       bindings =
         <
-          BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON  SNOWFLAKEONE  SNOWFLAKETWO  SNOWFLAKETHREE  SNOWFLAKEONEZERO BLACK_SQUARE_BUTTON
+          &none   &none   &none   &none   &none   &none         &none  fn1 fn2 fn3 fn10 &none
 
-          BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON  SNOWFLAKEFOUR  SNOWFLAKEFIVE  SNOWFLAKESIX  SNOWFLAKEONEZERO BLACK_SQUARE_BUTTON
+          &none   &none   &none   &none   &none   &none         &none  fn4 fn5 fn6 fn11 &none
 
-          BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON  SNOWFLAKESEVEN  SNOWFLAKEEIGHT  SNOWFLAKENINE  SNOWFLAKEONETWO BLACK_SQUARE_BUTTON
+          &none   &none   &none   &none   &none   &none         &none  fn7 fn8 fn9 fn12 &none
 
-                            BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON    BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON
+                            &none   &none   &none    &none   &none   &none
         >;
     };
     navigation {
       bindings =
         <
-          BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   TEAEND HOUSE
+          &none   &none   &none   &none   &none   &none         &none   &none   &none   &none   end home 
 
-          BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON         ARROW_LEFT   ARROW_DOWN   ARROW_UP   POINT_RIGHT   ARROW_HEADING_DOWN   ARROW_HEADING_UP
+          &none   &none   &none   &none   &none   &none         left   down up right page_down page_up 
 
-          BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON         BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON
+          &none   &none   &none   &none   &none   &none         &none   &none   &none   &none   &none   &none
 
-                            BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON    BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON
+                            &none   &none   &none    &none   &none   &none
         >;
     };
     bluetooth {
       bindings =
         <
-            BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON     BLACK_SQUARE_BUTTON   BLUE_SQUARETOOTHZERO  BLUE_SQUARETOOTHONE  BLUE_SQUARETOOTHTWO  BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON
+            &none &none &none &none &none &none     &none   bt0 bt1 bt2 &none   &none
 
-            BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON      BLUE_SQUARETOOTHPREVIOUS_TRACK_BUTTON   BLUE_SQUARETOOTHTHREE  BLUE_SQUARETOOTHFOUR BLUE_SQUARETOOTHNEXT_TRACK_BUTTON   BLACK_SQUARE_BUTTON   BLACK_SQUARE_BUTTON
+            &none &none &none &none &none &none      bt_previous bt3 bt4 bt_next &none   &none
 
-            BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON     BLACK_SQUARE_BUTTON  BLACK_SQUARE_BUTTON  BLACK_SQUARE_BUTTON  BLACK_SQUARE_BUTTON  BLACK_SQUARE_BUTTON  BLACK_SQUARE_BUTTON
+            &none &none &none &none &none &none     &none  &none  &none  &none  &none  &none
 
-                     BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON BLACK_SQUARE_BUTTON     TVLOCK  BLUE_SQUARETOOTHSOAP   BLACK_SQUARE_BUTTON
+                     &none &none &none     lock_screen  bt_clear &none
         >;
     };
   };
