@@ -64,36 +64,67 @@
 #define fn11 &kp F11
 #define fn12 &kp F12
 
+#define and     &kp AMPERSAND
+#define at      &kp AT_SIGN
+#define bang    &kp EXCLAMATION
 #define bksp    &kp BACKSPACE
+#define brgh_dw &kp C_BRIGHTNESS_DEC
+#define brgh_up &kp C_BRIGHTNESS_INC
+#define bslash  &kp BSLH
+#define caret   &kp CARET
+#define colon   &kp COLON
 #define comma   &kp COMMA
+#define d_qoute &kp DOUBLE_QUOTES
+#define dollar  &kp DOLLAR
+#define dot     &kp DOT
 #define down    &kp DOWN
 #define end     &kp END
 #define enter   &kp ENTER
-#define brgh_up &kp C_BRIGHTNESS_INC
+#define equal   &kp EQUAL
+#define fslash  &kp FSLH
+#define grave   &kp GRAVE
+#define greater &kp GREATER_THAN
+#define hash    &kp HASH
 #define home    &kp HOME
 #define lalt    &kp LEFT_ALT
+#define lbrace  &kp LEFT_BRACE
+#define lbrckt  &kp LEFT_BRACKET
 #define lctrl   &kp LEFT_CONTROL
 #define left    &kp LEFT
+#define less    &kp LESS_THAN
 #define lock    &kp C_AL_LOCK
-#define vol_up  &kp C_VOLUME_UP
-#define brgh_dw &kp C_BRIGHTNESS_DEC
+#define lparen  &kp LEFT_PARENTHESIS
+#define minus   &kp MINUS
 #define mute    &kp C_MUTE
 #define next    &kp C_NEXT
 #define page_dw &kp PAGE_DOWN
 #define page_up &kp PAGE_UP
 #define period  &kp PERIOD
+#define pipe    &kp PIPE
 #define play    &kp C_PLAY_PAUSE
+#define plus    &kp PLUS
+#define prct    &kp PERCENT
 #define prev    &kp C_PREVIOUS
+#define qmark   &kp QUESTION
 #define ralt    &kp RIGHT_ALT
+#define rbrace  &kp RIGHT_BRACE
+#define rbrckt  &kp RIGHT_BRACKET
 #define rctrl   &kp RIGHT_CONTROL
 #define rgui    &kp RIGHT_GUI
 #define right   &kp RIGHT
+#define rparen  &kp RIGHT_PARENTHESIS
 #define rshift  &kp RIGHT_SHIFT
+#define s_qoute &kp SINGLE_QUOTE
+#define semi    &kp SEMICOLON
 #define space   &kp SPACE
-#define vol_dw  &kp C_VOLUME_DOWN
+#define star    &kp ASTERISK
 #define tab     &kp TAB
+#define tilde   &kp TILDE
 #define toolbox &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
 #define up      &kp UP
+#define uscore  &kp UNDERSCORE
+#define vol_dw  &kp C_VOLUME_DOWN
+#define vol_up  &kp C_VOLUME_UP
 #define window  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
 
 #define bt0     &bt BT_SEL 0
@@ -155,13 +186,13 @@
     symbols {
       bindings =
         <
-          &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp EQUAL &kp PLUS &kp LESS_THAN &kp GREATER_THAN
+          bang    at      hash    dollar  prct    caret     lparen  rparen  equal   plus    less    greater
 
-          &kp QUESTION _ &kp UNDERSCORE &kp MINUS  &kp AMPERSAND &kp ASTERISK &kp LEFT_BRACE &kp RIGHT_BRACE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COLON &kp SEMICOLON
+          qmark   _       uscore  minus   and     star      lbrace  rbrace  s_qoute d_qoute colon   semi
 
-          _ _ _ _ &kp TILDE &kp GRAVE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp COMMA  &kp DOT &kp SPACE _
+          _       _       _       _       tilde   grave     lbrckt  rbrckt  comma   dot     space   _
 
-          _ _ _  &kp FSLH &kp PIPE &kp BSLH
+                                  _       _       _         fslash  pipe    bslash
         >;
     };
     numbers {
