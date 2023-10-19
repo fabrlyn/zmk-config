@@ -9,6 +9,8 @@
 #define NAVIGATION 4
 #define BLUETOOTH  5
 
+#define _ &none
+
 #define a &kp A
 #define b &kp B
 #define c &kp C
@@ -62,53 +64,51 @@
 #define fn11 &kp F11
 #define fn12 &kp F12
 
-#define backspace             &kp BACKSPACE
-#define comma                 &kp COMMA
-#define down                  &kp DOWN
-#define end                   &kp END
-#define enter                 &kp ENTER
-#define high_brightness       &kp C_BRIGHTNESS_INC
-#define home                  &kp HOME
-#define left_alt              &kp LEFT_ALT
-#define lctrl                 &kp LEFT_CONTROL
-#define left                  &kp LEFT
-#define lock_screen           &kp C_AL_LOCK
-#define loud_sound            &kp C_VOLUME_UP
-#define low_brightness        &kp C_BRIGHTNESS_DEC
-#define mute                  &kp C_MUTE
-#define next_track_button     &kp C_NEXT
-#define page_down             &kp PAGE_DOWN
-#define page_up               &kp PAGE_UP
-#define period                &kp PERIOD
-#define play_or_pause_button  &kp C_PLAY_PAUSE
-#define previous_track_button &kp C_PREVIOUS
-#define ralt                  &kp RIGHT_ALT
-#define rctrl                 &kp RIGHT_CONTROL
-#define rgui                  &kp RIGHT_GUI
-#define right                 &kp RIGHT
-#define rshift                &kp RIGHT_SHIFT 
-#define space                 &kp SPACE
-#define speaker               &kp C_VOLUME_DOWN
-#define tab                   &kp TAB
-#define toolbox               &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
-#define up                    &kp UP
-#define window                &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
+#define bksp    &kp BACKSPACE
+#define comma   &kp COMMA
+#define down    &kp DOWN
+#define end     &kp END
+#define enter   &kp ENTER
+#define brgh_up &kp C_BRIGHTNESS_INC
+#define home    &kp HOME
+#define lalt    &kp LEFT_ALT
+#define lctrl   &kp LEFT_CONTROL
+#define left    &kp LEFT
+#define lock    &kp C_AL_LOCK
+#define vol_up  &kp C_VOLUME_UP
+#define brgh_dw &kp C_BRIGHTNESS_DEC
+#define mute    &kp C_MUTE
+#define next    &kp C_NEXT
+#define page_dw &kp PAGE_DOWN
+#define page_up &kp PAGE_UP
+#define period  &kp PERIOD
+#define play    &kp C_PLAY_PAUSE
+#define prev    &kp C_PREVIOUS
+#define ralt    &kp RIGHT_ALT
+#define rctrl   &kp RIGHT_CONTROL
+#define rgui    &kp RIGHT_GUI
+#define right   &kp RIGHT
+#define rshift  &kp RIGHT_SHIFT
+#define space   &kp SPACE
+#define vol_dw  &kp C_VOLUME_DOWN
+#define tab     &kp TAB
+#define toolbox &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
+#define up      &kp UP
+#define window  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
 
-#define bt0         &bt BT_SEL 0
-#define bt1         &bt BT_SEL 1
-#define bt2         &bt BT_SEL 2
-#define bt3         &bt BT_SEL 3
-#define bt4         &bt BT_SEL 4
-#define bt_clear    &bt BT_CLR
-#define bt_next     &bt BT_NXT
-#define bt_previous &bt BT_PRV
+#define bt0     &bt BT_SEL 0
+#define bt1     &bt BT_SEL 1
+#define bt2     &bt BT_SEL 2
+#define bt3     &bt BT_SEL 3
+#define bt4     &bt BT_SEL 4
+#define bt_clr  &bt BT_CLR
+#define bt_next &bt BT_NXT
+#define bt_prev &bt BT_PRV
 
-#define lshift_escape &mt LEFT_SHIFT ESCAPE
+#define shf_esc &mt LEFT_SHIFT ESCAPE
 
-#define mo_numbers &mo NUMBERS
-#define mo_symbols &mo SYMBOLS
-
-#define _ &none
+#define mo_num &mo NUMBERS
+#define mo_sym &mo SYMBOLS
 
 &lt {
   tapping-term-ms = <150>;
@@ -143,73 +143,73 @@
     default {
       bindings =
         <
-            tab q  w  e  r  t  y  u  i  o  p  backspace
+          tab     q       w       e       r       t         y       u       i       o       p       bksp
 
-           lshift_escape a  s  d  f  g  h  j  k  l  rshift enter 
+          shf_esc a       s       d       f       g         h       j       k       l       rshift  enter
 
-            lctrl z  x  c  v  b  n  m  comma period space rgui 
+          lctrl   z       x       c       v       b         n       m       comma   period  space   rgui
 
-              left_alt mo_numbers mo_symbols &none &none ralt 
+                                  lalt    mo_num  mo_sym    _       _       ralt
         >;
     };
     symbols {
       bindings =
         <
-            &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp EQUAL &kp PLUS &kp LESS_THAN &kp GREATER_THAN
+          &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp EQUAL &kp PLUS &kp LESS_THAN &kp GREATER_THAN
 
-            &kp QUESTION &none &kp UNDERSCORE &kp MINUS  &kp AMPERSAND &kp ASTERISK &kp LEFT_BRACE &kp RIGHT_BRACE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COLON &kp SEMICOLON
+          &kp QUESTION _ &kp UNDERSCORE &kp MINUS  &kp AMPERSAND &kp ASTERISK &kp LEFT_BRACE &kp RIGHT_BRACE &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp COLON &kp SEMICOLON
 
-            &none &none &none &none &kp TILDE &kp GRAVE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp COMMA  &kp DOT &kp SPACE &none 
+          _ _ _ _ &kp TILDE &kp GRAVE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp COMMA  &kp DOT &kp SPACE _
 
-                                                    &none &none &none  &kp FSLH &kp PIPE &kp BSLH
+          _ _ _  &kp FSLH &kp PIPE &kp BSLH
         >;
     };
     numbers {
       bindings =
         <
-          previous_track_button mute speaker loud_sound play_or_pause_button next_track_button &none n1 n2 n3 &none backspace
+          prev    mute    vol_dw  vol_up  play    next      _       n1      n2      n3      _       bksp
 
-          &none low_brightness high_brightness window toolbox &none &none n4 n5 n6 n0 &none
+          _       brgh_dw brgh_up window  toolbox _         _       n4      n5      n6      n0      _
 
-          &none &none &none &none &none &none &none n7 n8 n9 &none &none
+          _       _       _       _       _       _         _       n7      n8      n9      _       _
 
-                            &none &none &none &none &none &none
+                                  _       _       _         _       _       _
         >;
     };
     f_numbers {
       bindings =
         <
-          &none   &none   &none   &none   &none   &none         &none  fn1 fn2 fn3 fn10 &none
+          _       _       _       _       _       _         _       fn1     fn2     fn3     fn10    _
 
-          &none   &none   &none   &none   &none   &none         &none  fn4 fn5 fn6 fn11 &none
+          _       _       _       _       _       _         _       fn4     fn5     fn6     fn11    _
 
-          &none   &none   &none   &none   &none   &none         &none  fn7 fn8 fn9 fn12 &none
+          _       _       _       _       _       _         _       fn7     fn8     fn9     fn12    _
 
-                            &none   &none   &none    &none   &none   &none
+                                  _       _       _         _       _       _
         >;
     };
     navigation {
       bindings =
         <
-          &none   &none   &none   &none   &none   &none         &none   &none   &none   &none   end home 
+          _       _       _       _       _       _         _       _       _       _       end     home
 
-          &none   &none   &none   &none   &none   &none         left   down up right page_down page_up 
+          _       _       _       _       _       _         left   down     up      right   page_dw page_up
 
-          &none   &none   &none   &none   &none   &none         &none   &none   &none   &none   &none   &none
+          _       _       _       _       _       _         _       _       _       _       _       _
 
-                            &none   &none   &none    &none   &none   &none
+                                  _       _       _         _       _       _
         >;
     };
     bluetooth {
       bindings =
         <
-            _ _ _ _ _ _     _   bt0 bt1 bt2 _   _
+          _       _       _       _       _       _         _       bt0     bt1     bt2     _       _
 
-            _ _ _ _ _ _      bt_previous bt3 bt4 bt_next _   _
+          _       _       _       _       _       _         bt_prev bt3     bt4     bt_next _       _
 
-            _ _ _ _ _ _     _  _  _  _  _  _
+          _       _       _       _       _       _         _       _       _       _       _       _
 
-                     _ _ _     lock_screen  bt_clear _
+                                  _       _       _         lock    bt_clr  _
         >;
     };
   };
