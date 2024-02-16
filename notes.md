@@ -1,0 +1,1 @@
+west build -p always -b nice_nano_v2 -- -DSHIELD=rbf0_left -DZMK_CONFIG="/home/rob/keyboard/impl/config" -DZMK_EXTRA_MODULES="/home/rob/keyboard/keyboard_rb.f_0"
