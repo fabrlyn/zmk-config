@@ -74,6 +74,8 @@
 #define caret   &kp CARET
 #define colon   &kp COLON
 #define comma   &kp COMMA
+#define copy    &kp K_COPY
+#define cut     &kp K_CUT
 #define d_qoute &kp DOUBLE_QUOTES
 #define dollar  &kp DOLLAR
 #define dot     &kp DOT
@@ -94,11 +96,13 @@
 #define less    &kp LESS_THAN
 #define lock    &kp C_AL_LOCK
 #define lparen  &kp LEFT_PARENTHESIS
+#define lshift  &kp LEFT_SHIFT
 #define minus   &kp MINUS
 #define mute    &kp C_MUTE
 #define next    &kp C_NEXT
 #define page_dw &kp PAGE_DOWN
 #define page_up &kp PAGE_UP
+#define paste   &kp K_PASTE
 #define period  &kp PERIOD
 #define pipe    &kp PIPE
 #define play    &kp C_PLAY_PAUSE
@@ -127,6 +131,8 @@
 #define vol_up  &kp C_VOLUME_UP
 #define window  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
 
+#define boot    &bootloader
+
 #define bt0     &bt BT_SEL 0
 #define bt1     &bt BT_SEL 1
 #define bt2     &bt BT_SEL 2
@@ -136,10 +142,17 @@
 #define bt_next &bt BT_NXT
 #define bt_prev &bt BT_PRV
 
-#define shf_esc &mt LEFT_SHIFT ESCAPE
+#define nav_esc  &lt NAVIGATION ESCAPE
+#define shf_scl &mt RIGHT_SHIFT SEMICOLON
 
-#define mo_num &mo NUMBERS
-#define mo_sym &mo SYMBOLS
+#define mo_fnum &mo F_NUMBERS
+#define mo_nav  &mo NAVIGATION
+#define mo_num  &mo NUMBERS
+#define mo_sym  &mo SYMBOLS
+
+&mt {
+  tapping-term-ms = <250>;
+};
 
 &lt {
   tapping-term-ms = <150>;
@@ -153,20 +166,15 @@
       key-positions = <0 36>;
       bindings = <&mo BLUETOOTH>;
     };
-    navigation_layer {
-      timeout-ms = <50>;
-      key-positions = <12 37>;
-      bindings = <&mo NAVIGATION>;
-    };
-    f_numbers_layer {
-      timeout-ms = <50>;
-      key-positions = <37 40>;
-      bindings = <&mo F_NUMBERS>;
-    };
     left_gui {
       timeout-ms = <50>;
       key-positions = <24 37>;
       bindings = <&kp LEFT_GUI>;
+    };
+    caps_word {
+      timeout-ms = <50>;
+      key-positions = <12 22>;
+      bindings = <&caps_word>;
     };
   };
   keymap {
@@ -176,23 +184,23 @@
         <
           tab     q       w       e       r       t         y       u       i       o       p       bksp
 
-          shf_esc a       s       d       f       g         h       j       k       l       rshift  enter
+          lshift  a       s       d       f       g         h       j       k       l       shf_scl enter
 
-          lctrl   z       x       c       v       b         n       m       comma   period  space   rgui
-
-                                  lalt    mo_num  mo_sym    _       _       ralt
+          lctrl   z       x       c       v       b         n       m       comma   period  fslash  rgui
+        
+                                  lalt    mo_sym space     nav_esc mo_num  ralt
         >;
     };
-    symbols {
+    symbols_0 {
       bindings =
         <
-          bang    at      hash    dollar  prct    caret     lparen  rparen  equal   plus    less    greater
+          bang    at      hash    dollar  prct    caret     and     star    lparen  rparen minus   bksp
 
-          qmark   _       uscore  minus   and     star      lbrace  rbrace  s_qoute d_qoute colon   semi
+          _       _       mo_num  _       enter   _         plus    equal   lbrace  rbrace d_qoute s_qoute 
 
-          _       _       _       _       tilde   grave     lbrckt  rbrckt  comma   dot     space   _
+          _       _       _       _       _       _         grave   uscore  lbrckt  rbrckt bslash  tilde
 
-                                  _       _       _         fslash  pipe    bslash
+                                  _       _       _         space   pipe    _
         >;
     };
     numbers {
@@ -200,17 +208,17 @@
         <
           prev    mute    vol_dw  vol_up  play    next      _       n1      n2      n3      _       bksp
 
-          _       brgh_dw brgh_up window  toolbox _         _       n4      n5      n6      n0      _
+          window mo_fnum brgh_dw brgh_up toolbox  _         _       n4      n5      n6      n0      _
 
           _       _       _       _       _       _         _       n7      n8      n9      _       _
 
-                                  _       _       _         _       _       _
+                                  _       _       _         space   _       _
         >;
     };
     f_numbers {
       bindings =
         <
-          _       _       _       _       _       _         _       fn1     fn2     fn3     fn10    _
+          _       _       _       _       _       _         _       fn1     fn2     fn3     fn10    bksp
 
           _       _       _       _       _       _         _       fn4     fn5     fn6     fn11    _
 
@@ -222,9 +230,9 @@
     navigation {
       bindings =
         <
-          _       _       _       _       _       _         _       _       _       _       end     home
+          _       _       _       _       _       _         _       _       _       _       _       bksp
 
-          _       _       _       _       _       _         left   down     up      right   page_dw page_up
+          _       _       _       _       _       _         left   down     up      right   _       _
 
           _       _       _       _       _       _         _       _       _       _       _       _
 
@@ -240,7 +248,7 @@
 
           _       _       _       _       _       _         _       _       _       _       _       _
 
-                                  _       _       _         lock    bt_clr  _
+                                  _       _       boot     lock    bt_clr  _
         >;
     };
   };
